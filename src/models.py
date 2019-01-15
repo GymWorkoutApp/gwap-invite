@@ -16,8 +16,6 @@ class InviteStatus(enum.Enum):
     ACCEPTED = 'accepted'
     DENIED = 'denied'
 
-    vars()
-
 
 class InviteModel(BaseModel):
     __tablename__ = 'invites'
