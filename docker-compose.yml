@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gwap-invite:
+    container_name: gwap-invite
+    build: .
+    expose:
+      - 8000
+    ports:
+      - 8080:8080
+    env_file:
+      - environments/hml.env
